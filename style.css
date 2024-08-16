@@ -1,0 +1,53 @@
+.user-card {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color: #2F4F4F;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-photo {
+    flex-shrink: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.user-info {
+    padding: 20px;
+    width: 60%;
+    margin-left: 25px;
+}
+
+.user-info h2 {
+    margin: 0 0 10px 0;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.user-info p {
+    margin: 5px 0;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#email-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#email-link.used {
+    color: green;
+}
+
